@@ -1,0 +1,43 @@
+.h-resume {
+    hgroup.p-name h3,
+    h4 {
+        margin: 0.25rem 0;
+    }
+
+    .dt-x-time-period {
+        font-style: italic;
+    }
+
+    .dt-x-time-period > .dt-start::after {
+        content: '–';
+    }
+
+    ul.p-x-job,
+    .p-education > ul {
+        display: inline;
+        list-style: none;
+    }
+
+    .p-contact.h-card h1 {
+        font-size: 2.25rem;
+    }
+
+    .p-education {
+        .p-name {
+            font-weight: 700;
+            &::after {
+                content: ' - ';
+            }
+        }
+    }
+
+    .p-experience {
+        h3 {
+            margin: 0;
+        }
+
+        ul {
+            list-style-position: outside;
+        }
+    }
+}

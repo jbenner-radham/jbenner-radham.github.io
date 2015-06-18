@@ -1,0 +1,23 @@
+{
+  "name": "@radioactivehamster/jamesbenner.com",
+  "version": "0.0.0",
+  "description": "Website for my personal page. Just a resume right now, whee!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "James Benner <james.benner@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@radioactivehamster/date-time": "^0.1.2",
+    "babel": "^5.5.8",
+    "browser-sync": "^2.7.12",
+    "gulp": "^3.9.0",
+    "gulp-htmltidy": "^0.2.2",
+    "gulp-less": "^3.0.3",
+    "gulp-stachio": "^0.1.0",
+    "handlebars": "^3.0.3",
+    "js-yaml": "^3.3.1",
+    "semantic-style": "^0.1.0"
+  }
+}

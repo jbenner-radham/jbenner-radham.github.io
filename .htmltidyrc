@@ -1,0 +1,5 @@
+indent: auto
+new-inline-tags: data
+show-warnings: yes
+tidy-mark: true
+wrap: 120
