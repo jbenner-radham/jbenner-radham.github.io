@@ -488,6 +488,9 @@ p {
 .h-resume .p-education .p-name::after {
   content: ' - ';
 }
+.h-resume #experience h2 {
+  margin-bottom: 0;
+}
 .h-resume .p-experience h3 {
   margin: 0;
 }
@@ -511,7 +514,6 @@ h1 {
   color: #7fdbff;
   font-size: 5rem;
   line-height: 4.2rem;
-  margin-bottom: 1.5rem;
 }
 h2 {
   color: #0074d9;
