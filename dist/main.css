@@ -482,9 +482,6 @@ p {
   display: inline;
   list-style: none;
 }
-.h-resume .p-contact.h-card h1 {
-  font-size: 2.25rem;
-}
 .h-resume .p-education .p-name {
   font-weight: 700;
 }
@@ -509,4 +506,16 @@ hr {
 }
 footer {
   font-size: 0.8rem;
+}
+h1 {
+  color: #7fdbff;
+  font-size: 5rem;
+  line-height: 4.2rem;
+  margin-bottom: 1.5rem;
+}
+h2 {
+  color: #0074d9;
+}
+h3 {
+  color: #aaaaaa;
 }
