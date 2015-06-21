@@ -467,6 +467,11 @@ p {
 .h-card .p-tz {
   display: none;
 }
+.h-resume {
+  border: thin solid #dddddd;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
 .h-resume hgroup.p-name h3,
 .h-resume h4 {
   margin: 0.25rem 0;
@@ -491,11 +496,18 @@ p {
 .h-resume #experience h2 {
   margin-bottom: 0;
 }
-.h-resume .p-experience h3 {
+.h-resume #experience .p-experience h3 {
   margin: 0;
 }
-.h-resume .p-experience ul {
+.h-resume #experience .p-experience ul {
   list-style-position: outside;
+}
+.h-resume #references aside {
+  font-style: italic;
+}
+footer {
+  font-size: 0.8rem;
+  margin-top: 1.5rem;
 }
 body {
   margin: 1.5rem;
@@ -504,11 +516,8 @@ body {
   text-justify: newspaper;
 }
 hr {
-  margin: 2rem 0;
-  border: 1px solid #dddddd;
-}
-footer {
-  font-size: 0.8rem;
+  margin: 2.5rem 0;
+  border: thin solid #dddddd;
 }
 h1 {
   color: #7fdbff;
