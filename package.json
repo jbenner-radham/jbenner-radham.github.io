@@ -13,6 +13,7 @@
     "babel": "^5.5.8",
     "browser-sync": "^2.7.12",
     "colors.css": "^2.3.0",
+    "font-awesome": "^4.3.0",
     "gulp": "^3.9.0",
     "gulp-htmltidy": "^0.2.2",
     "gulp-less": "^3.0.3",
