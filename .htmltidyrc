@@ -1,3 +1,4 @@
+drop-empty-elements: no
 indent: auto
 new-inline-tags: data
 show-warnings: yes
