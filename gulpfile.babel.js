@@ -13,7 +13,7 @@ var stachio     = require('gulp-stachio');
 gulp.task('serve', ['style', 'template'], () => {
     browserSync.init({
         open: false,
-        server: { baseDir: './dist' }
+        server: { baseDir: './' }
     });
     gulp.watch('./src/**/*.*', ['style', 'template']).on('change', browserSync.reload);
 });
@@ -21,7 +21,7 @@ gulp.task('serve', ['style', 'template'], () => {
 gulp.task('style', () => {
     return gulp.src('./src/style/main.less')
         .pipe(less())
-        .pipe(gulp.dest('./dist/'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('template', () => {
@@ -30,14 +30,15 @@ gulp.task('template', () => {
      * @todo Look into potential "safe string" encoding issues in `stachio`.
      */
     let author     = pkg.author.replace(/ <.+>/i, '');
+    let cname      = fs.readFileSync('./CNAME').toString();
     let htmltidyrc = yaml.load(fs.readFileSync('./.htmltidyrc').toString());
 
     return gulp.src('./src/template/**/*.hbs')
-        .pipe(stachio({ author: author, timestamp: dateTime() }))
+        .pipe(stachio({ author: author, cname: cname, timestamp: dateTime() }))
         // htmltidy wipes out `data` elements and leaves only their values for
         // some reason... probably because the element isn't internally registered?
         .pipe(htmltidy(htmltidyrc))
-        .pipe(gulp.dest('./dist'));
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('default', ['serve']);
