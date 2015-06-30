@@ -5,8 +5,9 @@ var dateTime    = require('@radioactivehamster/date-time');
 var fs          = require('fs');
 var gulp        = require('gulp');
 var htmltidy    = require('gulp-htmltidy');
-var jsYaml      = require('js-yaml');
+var yaml        = require('js-yaml');
 var less        = require('gulp-less');
+var pkg         = require('./package.json');
 var stachio     = require('gulp-stachio');
 
 gulp.task('serve', ['style', 'template'], () => {
@@ -24,10 +25,15 @@ gulp.task('style', () => {
 });
 
 gulp.task('template', () => {
-    let htmltidyrc = jsYaml.load(fs.readFileSync('./.htmltidyrc').toString());
+    /**
+     * Remove angle bracket enclosed email addresses.
+     * @todo Look into potential "safe string" encoding issues in `stachio`.
+     */
+    let author     = pkg.author.replace(/ <.+>/i, '');
+    let htmltidyrc = yaml.load(fs.readFileSync('./.htmltidyrc').toString());
 
     return gulp.src('./src/template/**/*.hbs')
-        .pipe(stachio({ timestamp: dateTime() }))
+        .pipe(stachio({ author: author, timestamp: dateTime() }))
         // htmltidy wipes out `data` elements and leaves only their values for
         // some reason... probably because the element isn't internally registered?
         .pipe(htmltidy(htmltidyrc))

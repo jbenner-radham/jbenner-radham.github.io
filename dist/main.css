@@ -1,5 +1,6 @@
 /* links.css - v0.0.1 - "Smarter defaults for links" License MIT
 */
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 a {
   -webkit-transition: color .4s;
   transition: color .4s;
@@ -509,10 +510,13 @@ footer {
   font-size: 0.8rem;
   margin-top: 1.5rem;
 }
+footer img[alt='Creative Commons License'] {
+  border-width: 0;
+}
 body {
   margin: 1.5rem;
   line-height: 1.25;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-justify: newspaper;
 }
 hr {
