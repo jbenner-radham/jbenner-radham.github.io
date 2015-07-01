@@ -35,8 +35,6 @@ gulp.task('template', () => {
 
     return gulp.src('./src/template/**/*.hbs')
         .pipe(stachio({ author: author, cname: cname, timestamp: dateTime() }))
-        // htmltidy wipes out `data` elements and leaves only their values for
-        // some reason... probably because the element isn't internally registered?
         .pipe(htmltidy(htmltidyrc))
         .pipe(gulp.dest('./'));
 });

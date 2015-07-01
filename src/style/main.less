@@ -1,7 +1,8 @@
-@import (less) '../../node_modules/semantic-style/dist/main.css';
-@import (reference) '../../node_modules/colors.css/less/colors';
+@node-modules: '../../node_modules';
+
+@import (less) '@{node-modules}/semantic-style/dist/main.css';
+@import (reference) '@{node-modules}/colors.css/less/colors';
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
-@import '_h-card';
 @import '_h-resume';
 @import '_footer';
 

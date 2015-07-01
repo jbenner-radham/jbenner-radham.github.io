@@ -465,9 +465,6 @@ p {
   font-weight: normal;
   font-style: italic;
 }
-.h-card .p-tz {
-  display: none;
-}
 .h-resume {
   border: thin solid #dddddd;
   border-radius: 1rem;
