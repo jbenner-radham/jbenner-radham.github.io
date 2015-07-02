@@ -1,6 +1,8 @@
 'use strict';
 
 var browserSync = require('browser-sync').create();
+var colorguard  = require('gulp-colorguard');
+var csscomb     = require('gulp-csscomb');
 var dateTime    = require('@radioactivehamster/date-time');
 var fs          = require('fs');
 var gulp        = require('gulp');
@@ -21,6 +23,11 @@ gulp.task('serve', ['style', 'template'], () => {
 gulp.task('style', () => {
     return gulp.src('./src/style/main.less')
         .pipe(less())
+        .pipe(csscomb())
+        /**
+         * @todo Correct the color conflict with "links.css."
+         */
+        .pipe(colorguard().on('error', e => console.warn(e.message)))
         .pipe(gulp.dest('./'));
 });
 
