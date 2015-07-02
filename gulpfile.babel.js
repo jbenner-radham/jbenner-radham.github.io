@@ -46,4 +46,4 @@ gulp.task('template', () => {
         .pipe(gulp.dest('./'));
 });
 
-gulp.task('default', ['serve']);
+gulp.task('default', ['style', 'template']);

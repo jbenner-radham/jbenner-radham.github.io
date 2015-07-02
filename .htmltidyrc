@@ -1,4 +1,4 @@
-indent: auto
+indent: no
 show-warnings: yes
 tidy-mark: no
 wrap: 120
