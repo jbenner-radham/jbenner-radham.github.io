@@ -615,6 +615,8 @@ body
     margin: 1.5rem;
 
     text-justify: newspaper;
+
+    color: #1b1b1b;
 }
 hr
 {
@@ -631,7 +633,7 @@ h1
 }
 h2
 {
-    color: #0074d9;
+    color: #a480ff;
 }
 h3
 {
