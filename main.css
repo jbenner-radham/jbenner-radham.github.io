@@ -643,3 +643,28 @@ h3
 {
     color: #aaa;
 }
+@font-face
+{
+    font-family: 'Redacted';
+
+    src: url('redacted-font/fonts/web/redacted-regular.eot');
+    src: url('redacted-font/fonts/web/redacted-regular.woff2') format('woff2'), url('redacted-font/fonts/web/redacted-regular.woff') format('woff'), url('redacted-font/fonts/web/redacted-regular.otf') format('opentype'), url('redacted-font/fonts/web/redacted-regular.svg#filename') format('svg');
+}
+.prototype
+{
+    font-family: 'Redacted';
+
+    color: #999;
+}
+.redacted
+{
+    font-family: 'Redacted';
+
+    color: red;
+}
+.prototype-script
+{
+    font-family: 'Redacted Script';
+
+    color: #999;
+}

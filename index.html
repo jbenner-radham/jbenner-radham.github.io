@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 <meta name="author" content="James Benner">
-<meta property="dcterms:modified" content="2015-07-04T21:01:54Z">
+<meta property="dcterms:modified" content="2015-11-24T03:26:55Z">
 <title>James Benner: CV</title>
 <link rel="canonical" href="http://www.jamesbenner.com/">
 <link rel="stylesheet" href="main.css">
@@ -30,93 +30,83 @@
 </script>
 </head>
 <body>
-<article vocab="http://microformats.org/wiki/h-resume" class="h-resume" id="james-benner-resume">
-<div class="p-contact h-card" id="james-benner-vcard">
-<h1 class="p-name">James<br>
-Benner</h1>
-<span class="p-adr h-adr"><span class="p-street-address">1365 Bryson Rd.</span><br>
-<span class="p-locality">Columbus</span>, <span class="p-region"><abbr title="Ohio">OH</abbr></span> <span class=
-"p-postal-code">43224</span></span><br>
-<a href="tel:+1-614-707-3596" class="p-tel">614.707.3596</a><br>
-<a href="mailto:james.benner@gmail.com" class="u-email">james.benner@gmail.com</a></div>
-<section id="summary" class="p-summary">
-<h2>Summary</h2>
-I am a web &amp; HTTP specialist, computer scientist, programmer, open source advocate, and geek who is constantly
-researching and implementing new tech and methodologies. I thrive on learning, <span class="p-skill">research</span>,
-creating great web apps, streamlining <span class="p-skill">UX</span>, automating processes, and solving problems. I
-specialize in <span class="p-skill">HTML</span>, <span class="p-skill">CSS/Less/Stylus</span>, <span class=
-"p-skill">PHP</span>, <span class="p-skill">C</span>, <span class="p-skill">Node.js/io.js/JavaScript</span>, and
-practitioner of <span class="p-skill">C++</span>, <span class="p-skill">C#</span>, <span class="p-skill">Go</span>,
-<span class="p-skill">Python</span>, <span class="p-skill">Ruby</span>, <span class="p-skill">Rust</span>, and
-<span class="p-skill">Go</span>.</section>
-<section id="experience">
-<h2>Experience</h2>
-<section class="p-experience h-card h-event">
-<ul class="p-x-job">
-<li class="p-name p-organization-name">
-<h3>Yutani Holdings</h3>
-</li>
-<li class="p-job-title">
-<h4>Freelance Engineer</h4>
-</li>
-<li class="dt-x-time-period"><time class="dt-start" datetime="2015-03">March 2015</time> Current</li>
-</ul>
-<ul class="p-x-accomplishments">
-<li>Currently architecting a stealth mode cryptocurrency project.</li>
-</ul>
-</section>
-<section class="p-experience h-card h-event">
-<ul class="p-x-job">
-<li class="p-name p-organization-name">
-<h3>Sage Sustainable Electronics</h3>
-</li>
-<li class="p-job-title">
-<h4>Software Engineer</h4>
-</li>
-<li class="dt-x-time-period"><time class="dt-start" datetime="2014-10">October 2014</time> <time class="dt-end"
-datetime="2015-02">February 2015</time></li>
-</ul>
-<ul class="p-x-accomplishments">
-<li>Rewrote a core legacy program and reduced memory consumption from <abbr title="6 × 10⁹ bytes">6GB</abbr>+ to less
-than <abbr title="1 × 10⁶ bytes">1MB</abbr>.</li>
-<li>Refactored a large legacy codebase and applied <abbr title=
-"Single responsibility, Open-closed, Liskov substitution, Interface segregation and Dependency inversion">SOLID</abbr>
-and <abbr title="Separation of Concerns">SoC</abbr> principles while doubling performance and reducing code
-complexity.</li>
-<li>Architected a system that processed gigabytes of auction information from <a href="http://www.ebay.com/">eBay</a>
-to perform data science and <abbr title="Natural Language Processing">NLP</abbr> analysis.</li>
-</ul>
-</section>
-<section class="p-experience h-card h-event">
-<ul class="p-x-job">
-<li class="p-name p-organization-name">
-<h3>Arrow Electronics</h3>
-</li>
-<li class="p-job-title">
-<h4>Application Engineer</h4>
-</li>
-<li class="dt-x-time-period"><time class="dt-start" datetime="2001-12">December 2001</time> <time class="dt-end"
-datetime="2014-09">September 2014</time></li>
-</ul>
-<ul class="p-x-accomplishments">
-<li>Developed an image deployment system, system backup, and restore utility that powered the nation's largest <a href=
-"http://www.microsoft.com/refurbishedpcs/MAR.aspx">Microsoft Authorized Refurbisher</a> as well as the <a href=
-"http://everyoneon.org/about/c2c/">Connect2Compete</a> initiative with the <a href="https://www.fcc.gov/">FCC</a>. The
-aforementioned system resulted in less imaging issues and <abbr title="Return Merchandise Authorization">RMA</abbr>s as
-well as being faster than our prior solution.</li>
-<li>Worked my way through the positions of Technician, Lead Technician, Asset Disposition Coordinator, and Software
-Configuration Management Technician prior to my formal engineer position.</li>
-</ul>
-</section>
-</section>
-<section class="p-x-references" id="references">
-<h2>References</h2>
-<aside>References available upon request.</aside>
-</section>
-</article>
-<footer><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" src=
-"https://i.creativecommons.org/l/by/4.0/88x31.png"></a><br>
-Except where otherwise noted, content on this site is licensed under a <a rel="license" href=
-"http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</footer>
+<style>
+    main {
+        width: 100%;
+    }
+
+    main.h-card h1 {
+        color: #2b2b2b;
+        font-size: 11rem;
+        text-transform: uppercase;
+        font-weight: 800;
+        /*background: yellow;*/
+        margin-bottom: .2em;
+    }
+
+    main.h-card li.p-category {
+        color: #555;
+        display: inline;
+        font-size: 4rem;
+        font-weight: 500;
+    }
+
+    main.h-card > p {
+        color: #777;
+        font-size: 3.8em;
+        text-align: right;
+    }
+
+    ul {
+        /*float: right;*/
+        list-style: none;
+        margin-left: auto;
+        /*margin-right: 0;*/
+        width: 100%;
+    }
+
+    ul:after {
+        /*clear: right;*/
+    }
+
+    ul > li {
+        /*margin-left: 0;*/
+        /*padding-left: 0;*/
+    }
+
+    li + li:before {
+        color: #ccc;
+        /*content: ">";*/
+        content: '|';
+    }
+
+    footer {
+        margin-top: 5em;
+    }
+</style>
+<main class="h-card">
+<h1 class="p-name">James Benner</h1>
+<!--<ul>
+        <li class="p-category">Research
+        <li class="p-category">Code
+        <li class="p-category">Energy Drinks
+    </ul>-->
+<p><span class="p-category">Research</span>, <span class="p-category">Code</span> and <span class="p-category">Energy
+Drinks</span></p>
+</main>
+<h2>Lorem Ipsum Dolor Sit Amet</h2>
+<p>Consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra
+nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae
+augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non
+tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a
+semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet
+elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient
+montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.</p>
+<footer><small></small>
+<p><small>Except where otherwise noted, content on this site is licensed under <a rel="license" href=
+"http://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and source code under <a rel="license" href=
+"http://www.tldrlegal.com/license/mit-license">MIT License (Expat)</a>.</small></p>
+<small></small></footer>
 </body>
 </html>
