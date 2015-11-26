@@ -601,7 +601,13 @@ footer
 {
     font-size: .8rem;
 
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
     margin-top: 1.5rem;
+
+    border-top: 1px dashed #ddd;
 }
 footer img[alt='Creative Commons License']
 {
