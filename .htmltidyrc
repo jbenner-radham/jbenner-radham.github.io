@@ -1,4 +1,4 @@
 drop-empty-elements: no
-indent: no
+indent: yes
 show-warnings: yes
 wrap: 120

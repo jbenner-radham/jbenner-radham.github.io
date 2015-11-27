@@ -1,0 +1,19 @@
+doctype html
+html(lang='en-US' prefix='dcterms: http://purl.org/dc/terms/')
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=Edge')
+        meta(name='author' content='#{author}')
+        meta(property='dcterms:modified' content='#{timestamp}')
+        title James Benner: BAMF
+        link(rel='canonical' href='http://#{cname}/')
+        link(rel='stylesheet' href='main.css')
+
+    body
+        block content
+
+        footer
+            small
+                p.
+                    Except where otherwise noted, content on this site is licensed under #[a(rel='license', href='http://creativecommons.org/licenses/by/4.0/') CC BY 4.0]
+                    and source code under #[a(rel='license', href='http://www.tldrlegal.com/license/mit-license') MIT License (Expat)].
