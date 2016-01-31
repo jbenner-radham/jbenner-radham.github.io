@@ -18,5 +18,6 @@ x-accomplishment:
     - >
         Refactored a large legacy codebase and applied SOLID and SoC principles
         while doubling performance and reducing code complexity.
-    - > Architected a system that processed gigabytes of auction information
+    - >
+        Architected a system that processed gigabytes of auction information
         from eBay to perform data science and NLP analysis.
