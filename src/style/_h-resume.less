@@ -8,15 +8,15 @@
         margin: 0.25rem 0;
     }
 
-    .dt-x-time-period {
+    [typeof="dcterms:PeriodOfTime"] {
         font-style: italic;
+
+        & > .dt-start::after {
+            content: ' -';
+        }
     }
 
-    .dt-x-time-period > .dt-start::after {
-        content: '–';
-    }
-
-    ul.p-x-job,
+    ul.job,
     .p-education > ul {
         display: inline;
         list-style: none;
