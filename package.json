@@ -21,12 +21,13 @@
     "gulp-less": "^3.0.3",
     "gulp-stachio": "^0.1.0",
     "gulp-stylus": "^2.1.0",
-    "handlebars": "^3.0.3",
+    "handlebars": "^4.0.5",
     "js-yaml": "^3.3.1",
+    "kouto-swiss": "^0.11.14",
+    "moment": "^2.11.1",
     "semantic-style": "^0.1.0"
   },
   "dependencies": {
-    "kouto-swiss": "^0.11.13",
     "normalize.css": "^3.0.3"
   }
 }

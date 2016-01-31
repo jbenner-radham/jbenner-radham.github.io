@@ -1,0 +1,22 @@
+---
+org:       Sage Sustainable Electronics
+job-title: Software Engineer
+dt-start:  2014-10
+dt-end:    2015-02
+skill:
+    - Big Data
+    - DevOps
+    - JavaScript
+    - MongoDB
+    - MySQL
+    - PHP
+    - Ubuntu
+x-accomplishment:
+    - >
+        Rewrote a core legacy program and reduced memory consumption from 6GB+
+        to less than 1MB.
+    - >
+        Refactored a large legacy codebase and applied SOLID and SoC principles
+        while doubling performance and reducing code complexity.
+    - > Architected a system that processed gigabytes of auction information
+        from eBay to perform data science and NLP analysis.

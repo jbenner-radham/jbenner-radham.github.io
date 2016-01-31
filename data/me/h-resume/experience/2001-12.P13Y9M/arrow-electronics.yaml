@@ -1,0 +1,26 @@
+---
+org:       Arrow Electronics
+job-title: Application Engineer
+dt-start:  2001-12
+dt-end:    2014-09
+skill:
+    - C
+    - C++
+    - C#
+    - DevOps
+    - JavaScript
+    - MySQL
+    - PHP
+    - Ubuntu
+    - Windows Server
+x-accomplishment:
+    - >
+        Developed an image deployment system, system backup, and restore utility
+        that powered the nation's largest Microsoft Authorized Refurbisher as
+        well as the Connect2Compete initiative with the FCC. The aforementioned
+        system resulted in less imaging issues and RMAs as well as being faster
+        than our prior solution.
+    - >
+        Worked my way through the positions of Technician, Lead Technician,
+        Asset Disposition Coordinator, and Software Configuration Management
+        Technician prior to my formal engineer position.
