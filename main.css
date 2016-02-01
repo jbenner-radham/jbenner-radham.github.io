@@ -564,7 +564,7 @@ p
 }
 .h-resume [typeof='dcterms:PeriodOfTime'] > .dt-start::after
 {
-    content: ' -';
+    content: ' —';
 }
 .h-resume ul.job,
 .h-resume .p-education > ul
