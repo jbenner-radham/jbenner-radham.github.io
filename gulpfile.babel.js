@@ -37,7 +37,7 @@ gulp.task('template', () => {
      * @todo Look into potential "safe string" encoding issues in `stachio`.
      */
     let author     = pkg.author.replace(/ <.+>/i, '');
-    let cname      = fs.readFileSync('./CNAME').toString();
+    let cname      = fs.readFileSync('./CNAME').toString().trim();
     let htmltidyrc = yaml.load(fs.readFileSync('./.htmltidyrc').toString());
 
     return gulp.src('./src/template/**/*.hbs')

@@ -19,7 +19,6 @@
     "gulp-htmltidy": "^0.2.2",
     "gulp-less": "^3.0.3",
     "gulp-stachio": "^0.1.0",
-    "handlebars": "^3.0.3",
     "js-yaml": "^3.3.1",
     "semantic-style": "^0.1.0"
   }
