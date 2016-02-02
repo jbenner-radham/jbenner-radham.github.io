@@ -1,5 +1,6 @@
 /* links.css - v0.0.1 - "Smarter defaults for links" License MIT
 */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
 a
 {
@@ -553,10 +554,15 @@ p
     border: thin solid #ddd;
     border-radius: 1rem;
 }
-.h-resume hgroup.p-name h3,
 .h-resume h4
 {
     margin: .25rem 0;
+}
+.h-resume ul.job
+{
+    display: inline;
+
+    list-style: none;
 }
 .h-resume [typeof='dcterms:PeriodOfTime']
 {
@@ -565,21 +571,6 @@ p
 .h-resume [typeof='dcterms:PeriodOfTime'] > .dt-start::after
 {
     content: ' —';
-}
-.h-resume ul.job,
-.h-resume .p-education > ul
-{
-    display: inline;
-
-    list-style: none;
-}
-.h-resume .p-education .p-name
-{
-    font-weight: 700;
-}
-.h-resume .p-education .p-name::after
-{
-    content: ' - ';
 }
 .h-resume #experience h2
 {
@@ -606,10 +597,6 @@ footer
 footer img[alt='Creative Commons License']
 {
     border-width: 0;
-}
-h1.p-name.fn
-{
-    margin-bottom: .2em;
 }
 body
 {

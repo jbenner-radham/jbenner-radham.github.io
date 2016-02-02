@@ -3,31 +3,20 @@
     border-radius: 1rem;
     padding: 1.5rem;
 
-    hgroup.p-name h3,
     h4 {
         margin: 0.25rem 0;
+    }
+
+    ul.job {
+        display: inline;
+        list-style: none;
     }
 
     [typeof="dcterms:PeriodOfTime"] {
         font-style: italic;
 
         & > .dt-start::after {
-            content: ' —'; // <-- Em Dash
-        }
-    }
-
-    ul.job,
-    .p-education > ul {
-        display: inline;
-        list-style: none;
-    }
-
-    .p-education {
-        .p-name {
-            font-weight: 700;
-            &::after {
-                content: ' - ';
-            }
+            content: ' —'; // <-- <SP><Em Dash>
         }
     }
 
