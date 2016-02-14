@@ -39,9 +39,10 @@ gulp.task('template', () => {
     let author     = pkg.author.replace(/ <.+>/i, '');
     let cname      = fs.readFileSync('./CNAME').toString().trim();
     let htmltidyrc = yaml.load(fs.readFileSync('./.htmltidyrc').toString());
+    let vcard      = fs.readFileSync('./data/me/vcard.jsonld').toString().trim();
 
     return gulp.src('./src/template/**/*.hbs')
-        .pipe(stachio({ author: author, cname: cname, timestamp: dateTime() }))
+        .pipe(stachio({ author: author, cname: cname, timestamp: dateTime(), vcard: vcard }))
         .pipe(htmltidy(htmltidyrc))
         .pipe(gulp.dest('./'));
 });
