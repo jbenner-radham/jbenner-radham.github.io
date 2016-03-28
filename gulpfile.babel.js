@@ -1,16 +1,16 @@
 'use strict';
 
-var browserSync = require('browser-sync').create();
-var colorguard  = require('gulp-colorguard');
-var csscomb     = require('gulp-csscomb');
-var dateTime    = require('@radioactivehamster/date-time');
-var fs          = require('fs');
-var gulp        = require('gulp');
-var htmltidy    = require('gulp-htmltidy');
-var yaml        = require('js-yaml');
-var less        = require('gulp-less');
-var pkg         = require('./package.json');
-var stachio     = require('gulp-stachio');
+const browserSync = require('browser-sync').create();
+const colorguard  = require('gulp-colorguard');
+const csscomb     = require('gulp-csscomb');
+const dateTime    = require('@radioactivehamster/date-time');
+const fs          = require('fs');
+const gulp        = require('gulp');
+const htmltidy    = require('gulp-htmltidy');
+const yaml        = require('js-yaml');
+const less        = require('gulp-less');
+const pkg         = require('./package.json');
+const stachio     = require('gulp-stachio');
 
 gulp.task('serve', ['style', 'template'], () => {
     browserSync.init({
@@ -27,7 +27,7 @@ gulp.task('style', () => {
         /**
          * @todo Correct the color conflict with "links.css."
          */
-        .pipe(colorguard().on('error', e => console.warn(e.message)))
+        .pipe(colorguard().on('error', e => console.error(e.message)))
         .pipe(gulp.dest('./'));
 });
 
