@@ -1,7 +1,7 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css);
 /* links.css - v0.0.1 - "Smarter defaults for links" License MIT
 */
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
 a
 {
     -webkit-transition: color .4s;
@@ -547,51 +547,63 @@ p
     font-weight: normal;
     font-style: italic;
 }
-.h-resume
+/* FONT PATH
+ * -------------------------- */
+@font-face
 {
-    margin: 3rem;
-    padding: 3rem;
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
 
-    border: thin solid #ddd;
-    border-radius: 1rem;
+    src: url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0');
+    src: url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'), url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'), url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'), url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'), url('//netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
 }
-.h-resume h4
+i.icon
 {
-    margin: .25rem 0;
-}
-.h-resume ul.job
-{
-    display: inline;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
 
-    list-style: none;
+    display: inline-block;
+
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-.h-resume [typeof='dcterms:PeriodOfTime']
+i.icon.fa-pull-left
 {
-    font-style: italic;
+    margin-right: .3em;
 }
-.h-resume [typeof='dcterms:PeriodOfTime'] > .dt-start::after
+i.icon.fa-pull-right
 {
-    content: ' —';
+    margin-left: .3em;
 }
-.h-resume #experience h2
+i.icon.pull-left
 {
-    margin-bottom: 0;
+    margin-right: .3em;
 }
-.h-resume #experience .p-experience h3
+i.icon.pull-right
 {
-    margin: 0;
+    margin-left: .3em;
 }
-.h-resume #experience .p-experience ul
+i.envelope:before
 {
-    list-style-position: outside;
+    content: '\f003';
 }
-.h-resume #references aside
+i.github:before
 {
-    font-style: italic;
+    content: '\f09b';
+}
+i.resume:before
+{
+    content: '\f0f6';
+}
+i.medium:before
+{
+    content: '\f23a';
 }
 footer
 {
-    margin-top: 2.5rem;
+    margin-top: 5.5rem;
     margin-bottom: 2.5rem;
 
     text-align: center;
@@ -602,12 +614,9 @@ footer img[alt='Creative Commons License']
 }
 body
 {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.25;
+    font-family: 'Open Sans', sans-serif;
 
     margin: 1.5rem;
-
-    text-justify: newspaper;
 
     color: #1b1b1b;
 }
@@ -620,19 +629,77 @@ hr
 h1
 {
     font-size: 5rem;
-    line-height: 4.2rem;
 
     color: #7fdbff;
 }
+h1#name
+{
+    font-size: 8rem;
+    line-height: 100%;
+
+    margin-bottom: 0;
+
+    text-align: center;
+
+    color: #333;
+}
 h2
 {
-    color: #a480ff;
+    font-size: 3rem;
+    font-style: italic;
+
+    text-align: center;
+
+    color: #aaa;
 }
 h3
 {
     color: #aaa;
 }
-.fa
+ul.links
 {
-    color: #7fdbff;
+    list-style-position: outside;
+    list-style-type: none;
+
+    text-align: center;
+}
+ul.links i
+{
+    color: #aaa;
+}
+ul.links > li
+{
+    font-size: 2.5rem;
+
+    display: inline;
+
+    margin: .5rem;
+}
+ul.links > li > a
+{
+    line-height: 125%;
+
+    white-space: nowrap;
+    text-decoration: none;
+}
+.h-card[rel='me']
+{
+    text-decoration: none;
+
+    color: #333;
+}
+@media all and (max-width: 360px)
+{
+    h1#name
+    {
+        font-size: 5rem;
+    }
+    h2
+    {
+        font-size: 2rem;
+    }
+    ul.links > li
+    {
+        font-size: 1.75rem;
+    }
 }

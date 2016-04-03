@@ -1,0 +1,8 @@
+drop-empty-elements: no
+indent:              no
+show-errors:         6
+show-info:           yes
+show-warnings:       yes
+sort-attributes:     none
+tidy-mark:           yes
+wrap:                120
