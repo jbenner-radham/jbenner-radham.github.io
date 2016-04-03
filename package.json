@@ -2,7 +2,7 @@
   "name": "jbenner-radham.github.io",
   "version": "0.2.0",
   "description": "Website for my personal page.",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -11,7 +11,7 @@
   "devDependencies": {
     "@radioactivehamster/date-time": "^0.1.2",
     "browser-sync": "^2.7.12",
-    "colors.css": "^2.3.0",
+    "colors-less": "^1.0.0",
     "font-awesome": "^4.5.0",
     "gulp": "^3.9.0",
     "gulp-colorguard": "^1.1.0",
@@ -24,6 +24,8 @@
     "js-yaml": "^3.3.1",
     "semantic-style": "^0.1.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "colors-less": "^1.0.0"
+  },
   "private": true
 }

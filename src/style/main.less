@@ -2,13 +2,13 @@
 
 @import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/4.0.0/normalize.min.css);
 @import (less) '@{node-modules}/semantic-style/dist/main.css';
-@import (reference) '@{node-modules}/colors.css/less/colors';
+@import (reference) '@{node-modules}/colors-less/less/colors';
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800);
 @import 'icons';
 @import '_footer';
 
 body {
-    color: #1b1b1b; // "Bootstrap" Black
+    color: #1b1b1b;
     margin: 1.5rem;
     font-family: 'Open Sans', sans-serif;
     // text-justify: newspaper;
@@ -33,8 +33,6 @@ h1#name {
 }
 
 h2 {
-    // Split-Complimentary CCW | http://croma.numixproject.org
-    // color: #a480ff; // "Pale Dull Blue"
     color: @gray;
     font-size: 3rem;
     text-align: center;
