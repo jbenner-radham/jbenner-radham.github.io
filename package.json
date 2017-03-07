@@ -23,7 +23,7 @@
     "gulp-stachio": "^0.1.0",
     "gulp-task-doc": "^1.0.7",
     "js-yaml": "^3.3.1",
-    "semantic-style": "^0.1.0"
+    "semantic-style": "^0.2.0"
   },
   "dependencies": {},
   "private": true
