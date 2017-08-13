@@ -55,7 +55,7 @@ gulp.task('template', () => {
     let vcard  = fs.readFileSync('./data/me/vcard.jsonld').toString().trim();
 
     return gulp.src('./src/template/**/*.hbs')
-        .pipe(stachio({ author: author, cname: cname, timestamp: dateTime(), vcard: vcard }))
+        .pipe(stachio({author, cname, timestamp: dateTime(), vcard}))
         .pipe(htmltidy(tidyrc))
         .pipe(htmlhint())
         .pipe(htmlhint.reporter())
