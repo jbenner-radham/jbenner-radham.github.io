@@ -11,7 +11,7 @@
   "license": "MIT",
   "devDependencies": {
     "@radioactivehamster/date-time": "^0.1.2",
-    "browser-sync": "^2.7.12",
+    "browser-sync": "^2.18.13",
     "colors-less": "^1.0.0",
     "font-awesome": "^4.7.0",
     "gulp": "^3.9.0",
@@ -22,7 +22,7 @@
     "gulp-less": "^3.0.3",
     "gulp-stachio": "^0.1.0",
     "gulp-task-doc": "^1.0.7",
-    "js-yaml": "^3.3.1",
+    "js-yaml": "^3.9.1",
     "semantic-style": "^0.2.0"
   },
   "dependencies": {},
