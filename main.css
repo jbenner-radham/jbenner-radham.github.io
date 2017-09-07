@@ -715,6 +715,8 @@ h3
 }
 ul.links
 {
+    padding-left: 0;
+
     list-style-position: outside;
     list-style-type: none;
 
