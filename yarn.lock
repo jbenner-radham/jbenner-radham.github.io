@@ -3,8 +3,8 @@
 
 
 "@radioactivehamster/date-time@^0.1.2":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@radioactivehamster/date-time/-/date-time-0.1.3.tgz#255a8e62c94fda8789d19fa3b46362097fe00a97"
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/@radioactivehamster/date-time/-/date-time-0.1.5.tgz#0c9a641c03ed59a97326ee164c5c5a92d5b4c639"
 
 "@radioactivehamster/has-private-filename@^0.1.0":
   version "0.1.0"
