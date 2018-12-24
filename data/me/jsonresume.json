@@ -17,6 +17,13 @@
         "profiles": []
     },
     "work": [{
+        "company": "ICC: Information Control Company",
+        "position": "Senior Consultant",
+        "website": "https://icctechnology.com",
+        "startDate": "April 2016",
+        "summary": "Currently consulting with an amazing team at Abercrombie & Fitch performing front end development work on their primary website with HTML, Sass, JavaScript, jQuery, JSTL and Mustache Templates.",
+        "highlights": []
+    }, {
         "company": "IGC Software",
         "position": "Lead Product Developer",
         "website": "http://igcsoftware.com",
