@@ -1,8 +1,11 @@
+// For reference <https://api.html-tidy.org/tidy/tidylib_api_5.6.0/tidy_config.html>
+
 drop-empty-elements: no
-indent:              no
-show-errors:         6
-show-info:           yes
-show-warnings:       yes
-sort-attributes:     none
-tidy-mark:           yes
-wrap:                120
+indent: auto
+indent-spaces: 4
+show-errors: 6
+show-info: yes
+show-warnings: yes
+sort-attributes: none
+tidy-mark: no
+wrap: 120

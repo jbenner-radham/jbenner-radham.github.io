@@ -1,6 +1,6 @@
 # vim: set noexpandtab:
 
-default: clean css html
+default: clean css html tidy
 
 clean:
 	@rm -f index.css index.css.map index.html
@@ -11,7 +11,11 @@ css:
 html:
 	@stachio src/template/ .
 
+tidy:
+	@tidy -config .tidyrc -modify index.html
+
 .PHONY: default \
 		clean \
 		css \
-		html
+		html \
+		tidy
