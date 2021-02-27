@@ -3,7 +3,7 @@
 default: clean css html
 
 clean:
-	@rm index.css index.css.map index.html
+	@rm -f index.css index.css.map index.html
 
 css:
 	@npx lessc --source-map src/style/index.less ./index.css
