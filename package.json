@@ -1,30 +1,20 @@
 {
   "name": "jbenner-radham.github.io",
-  "version": "0.2.0",
+  "version": "0.3.0",
+  "private": true,
   "description": "Website for my personal page.",
-  "main": "gulpfile.js",
+  "license": "MIT",
+  "author": "James Benner (http://www.jamesbenner.com/)",
+  "main": "index.html",
   "scripts": {
-    "start": "gulp serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "James Benner <james.benner@gmail.com>",
-  "license": "MIT",
-  "devDependencies": {
-    "@radioactivehamster/date-time": "^0.1.2",
-    "browser-sync": "^2.18.13",
+  "dependencies": {
     "colors-less": "^1.0.0",
-    "font-awesome": "^4.7.0",
-    "gulp": "^3.9.0",
-    "gulp-colorguard": "^1.1.0",
-    "gulp-csscomb": "^3.0.6",
-    "gulp-htmlhint": "^0.3.1",
-    "gulp-htmltidy": "^0.2.2",
-    "gulp-less": "^3.0.3",
-    "gulp-stachio": "^0.1.0",
-    "gulp-task-doc": "^1.0.7",
-    "js-yaml": "^3.9.1",
     "semantic-style": "^0.2.0"
   },
-  "dependencies": {},
-  "private": true
+  "devDependencies": {
+    "less": "^4.1.1",
+    "stachio": "git+https://github.com/jbenner-radham/node-stachio.git"
+  }
 }
