@@ -528,10 +528,14 @@ footer {
   margin-top: 2rem;
 }
 h1 {
+  color: #111111;
   font-size: 8rem;
   line-height: 100%;
   margin-bottom: 1.75rem;
   margin-top: 0;
+}
+a[rel="me"] {
+  text-decoration: none;
 }
 h2 {
   color: #AAAAAA;
