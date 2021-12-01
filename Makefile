@@ -9,7 +9,7 @@ css:
 	@npx lessc --source-map src/style/index.less ./index.css
 
 html:
-	@stachio src/template/ .
+	@npx stachio src/template/ .
 
 tidy:
 	@tidy -config .tidyrc -modify index.html
