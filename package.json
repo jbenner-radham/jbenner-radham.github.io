@@ -1,13 +1,14 @@
 {
   "name": "jbenner-radham.github.io",
-  "version": "0.3.5",
+  "version": "0.4.5",
   "private": true,
   "description": "Website for my personal page.",
   "license": "MIT",
-  "author": "James Benner (http://www.jamesbenner.com/)",
-  "main": "index.html",
+  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
+  "main": "./dist/index.html",
   "scripts": {
-    "build": "stachio src/template .",
+    "predeploy": "make",
+    "deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {

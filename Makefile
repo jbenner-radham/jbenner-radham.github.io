@@ -1,21 +1,25 @@
 # vim: set noexpandtab:
 
-default: clean css html tidy
+default: clean cname css html tidy
 
 clean:
-	@rm -f index.css index.css.map index.html
+	@rm -rf dist
+
+cname:
+	@mkdir -p dist && cp CNAME dist/
 
 css:
-	@npx lessc --source-map src/style/index.less ./index.css
+	@npx lessc --source-map src/style/index.less ./dist/index.css
 
 html:
-	@npx stachio src/template/ .
+	@npx stachio src/template/
 
 tidy:
-	@tidy -config .tidyrc -modify index.html
+	@tidy -config .tidyrc -modify dist/index.html
 
 .PHONY: default \
 		clean \
+		cname \
 		css \
 		html \
 		tidy
