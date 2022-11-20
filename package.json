@@ -7,6 +7,7 @@
   "author": "James Benner (http://www.jamesbenner.com/)",
   "main": "index.html",
   "scripts": {
+    "build": "stachio src/template .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -15,6 +16,6 @@
   },
   "devDependencies": {
     "less": "^4.1.1",
-    "stachio": "git+https://github.com/jbenner-radham/node-stachio.git"
+    "stachio": "^0.2.0"
   }
 }

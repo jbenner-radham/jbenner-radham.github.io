@@ -571,9 +571,10 @@ spdx-license-ids@^3.0.0:
   resolved "https://registry.yarnpkg.com/spdx-license-ids/-/spdx-license-ids-3.0.7.tgz#e9c18a410e5ed7e12442a549fbd8afa767038d65"
   integrity sha512-U+MTEOO0AiDzxwFvoa4JVnMV6mZlJKk2sBLt90s7G0Gd0Mlknc7kxEn3nuDPNZRta7O2uy8oLcZLVT+4sqNZHQ==
 
-"stachio@git+https://github.com/jbenner-radham/node-stachio.git":
-  version "0.0.0"
-  resolved "git+https://github.com/jbenner-radham/node-stachio.git#c210c30ab50e07500b0a573f07a89191d1938a11"
+stachio@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/stachio/-/stachio-0.2.0.tgz#33af732adaff24e3dfce2f36f1f38e82ee8780bd"
+  integrity sha512-wcUo+C6eTL2wBGJStsfxG/jjECVhzohBKAZODskcDnKSGgL0IFYgctK68tM7DfkS7H/3gXlNdRVq4vPCxc2zIw==
   dependencies:
     core-js "^3.8.3"
     fs-extra "^9.1.0"
