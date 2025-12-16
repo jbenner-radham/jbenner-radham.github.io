@@ -2,7 +2,7 @@
 
 drop-empty-elements: no
 indent: auto
-indent-spaces: 4
+indent-spaces: 2
 show-errors: 6
 show-info: yes
 show-warnings: yes
