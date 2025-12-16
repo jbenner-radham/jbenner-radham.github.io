@@ -1,0 +1,4 @@
+allowBuilds:
+  core-js: false
+  less: true
+minimumReleaseAge: 1440
