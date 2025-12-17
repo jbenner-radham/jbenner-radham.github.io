@@ -97,9 +97,12 @@ a {
 :root {
   --black: #111111;
   --gray: #aaaaaa;
+  --white: #ffffff;
 }
 
 body {
+  background-color: var(--black);
+  color: var(--white);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -114,7 +117,7 @@ footer {
 }
 
 h1 {
-  color: var(--black);
+  color: var(--white);
   font-size: 8rem;
   line-height: 100%;
   margin-bottom: 1.5rem;

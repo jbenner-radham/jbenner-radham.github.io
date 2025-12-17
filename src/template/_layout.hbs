@@ -25,5 +25,10 @@
     {{{content}}}
     {{> footer }}
     {{> analytics }}
+    <script type="module">
+      import { LetItGo } from 'https://unpkg.com/let-it-go@1.1.0/dist/index.esm.js';
+
+      const snow = new LetItGo({ style: { zIndex: 999, pointerEvents: 'none' } });
+    </script>
   </body>
 </html>
