@@ -110,14 +110,14 @@ body {
 }
 
 footer {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 h1 {
   color: var(--black);
   font-size: 8rem;
   line-height: 100%;
-  margin-bottom: 1.75rem;
+  margin-bottom: 1.5rem;
   margin-top: 0;
 }
 
