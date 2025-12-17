@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+/* Set the line-height for headings (can be smaller than the recommended 1.5 for content.) */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.15;
+}
+
 /*
  * Normalize the font size for small text.
  */
