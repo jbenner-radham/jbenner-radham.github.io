@@ -6,7 +6,7 @@
   <meta name="author" content="James Benner">
   <meta name="description" content="Developer, Researcher, and Geek">
   <meta property="dcterms:available" content="2016-04-03T20:21:40Z">
-  <meta property="dcterms:modified" content="2025-12-17T02:07:29Z">
+  <meta property="dcterms:modified" content="2025-12-17T02:33:34Z">
   <title>James Benner</title>
   <link rel="canonical" href="https://www.jamesbenner.com/">
   <link rel="stylesheet" href="index.css">
@@ -22,6 +22,11 @@
   </script>
 </head>
 <body>
+  <script type="module" defer>
+    import { LetItGo } from 'https://unpkg.com/let-it-go@1.1.0/dist/index.esm.js';
+
+    new LetItGo({ style: { zIndex: 999, pointerEvents: 'none' } });
+  </script>
   <main class="h-card">
     <hgroup>
       <a class="u-url" rel="me" href="https://www.jamesbenner.com/">
@@ -53,12 +58,6 @@
     
     ga('create', 'UA-101870760-1', 'auto');
     ga('send', 'pageview');
-  </script> 
-  <script type="module">
-
-      import { LetItGo } from 'https://unpkg.com/let-it-go@1.1.0/dist/index.esm.js';
-
-      const snow = new LetItGo({ style: { zIndex: 999, pointerEvents: 'none' } });
   </script>
 </body>
 </html>
