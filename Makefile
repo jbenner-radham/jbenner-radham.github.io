@@ -9,7 +9,7 @@ cname:
 	@mkdir -p dist && cp CNAME dist/
 
 css:
-	@npx lessc --compress --source-map src/style/index.less ./dist/index.css
+	@cp src/style/index.css dist/index.css
 
 html:
 	@npx stachio src/template/
