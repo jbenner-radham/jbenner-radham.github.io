@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Set the line-height for headings (can be smaller than the recommended 1.5 for content.) */
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.15;
+  line-height: 1.2; /* 1.2 is the default line-height that Firefox ships with so we reset to that. */
 }
 
 /*
@@ -72,32 +72,49 @@ small {
   font-size: 80%;
 }
 
-/* [LINKS.CSS <https://github.com/mrmrs/links>] */
+/* [LINKS.CSS (https://github.com/mrmrs/links)] */
 
+/*
+  Temporarily lightening the link color via color-mix for the dark theme.
+  Also, for some reason CSS specificity is behaving unexpectedly and I needed to
+  put `!important` on a couple properties. Look into this and fix it!!!
+ */
 a {
+  color: color-mix(in oklab, #265c83, white 30%) !important;
   transition: color .4s;
-  color: #265c83;
 
-  &:link, &:visited {
-    color: #265c83;
+  &:active  {
+    transition: color .3s;
+    color: #007be6 !important;
   }
 
   &:hover {
-    color: #7fdbff;
+    color: #7fdbff !important;
   }
 
-  a:active  {
-    transition: color .3s;
-    color: #007be6;
+  &:link, &:visited {
+    color: #265c83;
   }
 }
 
 /* [SITE SPECIFIC] */
 
-:root {
-  --black: #111111;
-  --gray: #aaaaaa;
-  --white: #ffffff;
+@property --black {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #111111;
+}
+
+@property --gray {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #aaaaaa;
+}
+
+@property --white {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #ffffff;
 }
 
 body {
