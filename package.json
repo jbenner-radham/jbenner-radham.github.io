@@ -4,7 +4,7 @@
   "private": true,
   "description": "Website for my personal page.",
   "license": "MIT",
-  "author": "James Benner <james.benner@gmail.com> (https://www.jamesbenner.com/)",
+  "author": "James Benner <hello@jamesbenner.com> (https://www.jamesbenner.com/)",
   "main": "./dist/index.html",
   "scripts": {
     "predeploy": "make",
